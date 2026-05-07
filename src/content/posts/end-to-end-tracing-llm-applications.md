@@ -14,7 +14,7 @@ sources:
     url: "https://docs.arize.com/phoenix/"
 schema:
   type: "TechArticle"
-heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/?prompt=clean%20engineering%20trace%20visualization%20with%20spans%20and%20timing%20waterfall&aspect=hero
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/mlobserve.com/end-to-end-tracing-llm-applications.png
 heroAlt: "End-to-end LLM trace waterfall"
 ---
 
