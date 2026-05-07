@@ -1,43 +1,54 @@
-/* Brand override for mlobserve-com — cluster=engineering.
- * Uses cluster-matching selector specificity (0,1,1) so this OVERRIDES the
- * cluster defaults from globals.css, which use the same selector specificity.
- * Source order wins; brand.css is imported after globals.css in BaseLayout.
- */
+/* Brand + visual variant for mlobserve-com
+ * cluster: engineering
+ * variant: v2_left_terminal_dense
+ * Generated 2026-05-07. Higher specificity than globals.css cluster rules. */
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap");
 
-body[data-cluster="engineering"] {
+body[data-cluster='engineering'] {
   --bg: 240 249 255;
   --fg: 12 74 110;
   --surface: 224 242 254;
   --muted: 240 249 255;
   --muted-fg: 125 211 252;
   --border: 125 211 252;
-
   --font-display: "Manrope", system-ui, sans-serif;
   --font-body: "Roboto Mono", system-ui, sans-serif;
-
-  /* Override the accent ramp midpoints with brand accent.
-   * The 400-700 range is what most components use. */
   --accent-400: 2 132 199;
   --accent-500: 2 132 199;
   --accent-600: 2 132 199;
   --accent-700: 2 132 199;
-
-  /* Brand metadata */
   --brand-tone: "sky-observatory";
   --brand-accent-rgb: 2 132 199;
+  --brand-variant: "v2_left_terminal_dense";
+}
+html.dark body[data-cluster='engineering'] {
+  --bg: 240 249 255; --fg: 12 74 110; --surface: 224 242 254;
+  --accent-500: 2 132 199; --accent-600: 2 132 199;
 }
 
-/* Same in dark mode (most brand books are dark-tone already) */
-html.dark body[data-cluster="engineering"] {
-  --bg: 240 249 255;
-  --fg: 12 74 110;
-  --surface: 224 242 254;
-  --muted: 240 249 255;
-  --muted-fg: 125 211 252;
-  --accent-400: 2 132 199;
-  --accent-500: 2 132 199;
-  --accent-600: 2 132 199;
-  --accent-700: 2 132 199;
+
+body[data-cluster='engineering'] {
+  --type-scale: 1.125;
+  --space-y: 0.25rem;
+}
+body[data-cluster='engineering'] h1 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.05; }
+body[data-cluster='engineering'] h2 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.15; }
+body[data-cluster='engineering'] h3 { font-size: calc(1rem * var(--type-scale) * var(--type-scale)); line-height: 1.2; }
+body[data-cluster='engineering'] p { margin-block: var(--space-y); }
+
+
+/* Hero / header layout — variant: left */
+body[data-cluster='engineering'] .hero, body[data-cluster='engineering'] header.site-header { text-align: left; padding: 3rem 1rem 2rem; }
+
+/* Card style — variant: border-left */
+body[data-cluster='engineering'] article { border-left: 3px solid rgb(2 132 199); padding-left: 1.5rem; background: transparent; }
+
+/* Accent application — variant: left-border-bg */
+body[data-cluster='engineering'] article { border-left: 4px solid rgb(2 132 199); padding-left: 1rem; }
+
+/* Border radius — variant uses 0 */
+body[data-cluster='engineering'] article,
+body[data-cluster='engineering'] .card {
+  border-radius: 0;
 }
