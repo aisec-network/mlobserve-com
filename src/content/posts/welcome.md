@@ -1,5 +1,6 @@
 ---
 title: "What this site is for"
+author: "Priya Anand"
 description: "ML Observe covers ML observability and MLOps from a production-engineering perspective. Here's what we publish."
 pubDate: 2026-05-03
 tags: ["meta"]
