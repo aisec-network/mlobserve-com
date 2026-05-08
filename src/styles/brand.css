@@ -11,7 +11,7 @@ body[data-cluster] {
   --font-display: "Crimson Pro", "Iowan Old Style", Georgia, serif;
   --font-body: "Work Sans", "Helvetica Neue", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --brand-accent-rgb: 199 155 26;
+  --brand-accent-rgb: 0 0 0;
   --brand-identity-font: "f06_serif_crimson_workssans";
   --brand-identity-palette: "p04_h45_warm";
   --brand-identity-layout: "feed";
@@ -26,7 +26,7 @@ html.dark body[data-cluster] {
   --border: 60 50 36;
   --surface: 22 18 12;
   --surface-alt: 34 28 20;
-  --brand-accent-rgb: 241 202 85;
+  --brand-accent-rgb: 255 255 255;
 }
 
 /* Density modifiers */
