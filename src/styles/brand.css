@@ -1,24 +1,35 @@
-/* Brand for mlobserve-com: cluster=engineering, variant=v2_left_terminal_dense */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap");
+/* Brand for mlobserve-com: identity=f06_serif_crimson_workssans+p04_h45_warm+feed+v02_news */
 
-body[data-cluster='engineering'] {
-  --bg: 240 249 255;
-  --fg: 12 74 110;
-  --surface: 224 242 254;
-  --muted: 240 249 255;
-  --muted-fg: 125 211 252;
-  --border: 125 211 252;
-  --font-display: "Manrope", system-ui, sans-serif;
-  --font-body: "Roboto Mono", system-ui, sans-serif;
-  --accent-400: 2 132 199;
-  --accent-500: 2 132 199;
-  --accent-600: 2 132 199;
-  --accent-700: 2 132 199;
-  --brand-tone: "sky-observatory";
-  --brand-accent-rgb: 2 132 199;
-  --brand-variant: "v2_left_terminal_dense";
+body[data-cluster] {
+  --bg: 255 253 250;
+  --fg: 38 30 18;
+  --muted: 253 250 242;
+  --muted-fg: 120 100 72;
+  --border: 232 222 200;
+  --surface: 255 253 250;
+  --surface-alt: 253 250 242;
+  --font-display: "Crimson Pro", "Iowan Old Style", Georgia, serif;
+  --font-body: "Work Sans", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --brand-accent-rgb: 199 155 26;
+  --brand-identity-font: "f06_serif_crimson_workssans";
+  --brand-identity-palette: "p04_h45_warm";
+  --brand-identity-layout: "feed";
+  --brand-identity-voice: "v02_news";
 }
-html.dark body[data-cluster='engineering'] {
-  --bg: 240 249 255; --fg: 12 74 110; --surface: 224 242 254;
-  --accent-500: 2 132 199; --accent-600: 2 132 199;
+
+html.dark body[data-cluster] {
+  --bg: 22 18 12;
+  --fg: 248 242 228;
+  --muted: 34 28 20;
+  --muted-fg: 180 168 140;
+  --border: 60 50 36;
+  --surface: 22 18 12;
+  --surface-alt: 34 28 20;
+  --brand-accent-rgb: 241 202 85;
 }
+
+/* Density modifiers */
+body.density-loose  { --space-section: 5rem; }
+body.density-normal { --space-section: 3rem; }
+body.density-dense  { --space-section: 1.5rem; }
